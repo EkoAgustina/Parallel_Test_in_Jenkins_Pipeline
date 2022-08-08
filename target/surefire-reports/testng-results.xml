@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Clock-Test-Suite" duration-ms="46981" started-at="2022-08-08T10:43:43 ICT" finished-at="2022-08-08T10:44:30 ICT">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.tests.TestRunner@17579e0f]" name="scenario" class="cucumber.tests.TestRunner"/>
+        <method signature="TestRunner.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.tests.TestRunner@7a187f14]" name="scenario" class="cucumber.tests.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="127.0.0.1:21503" duration-ms="46417" started-at="2022-08-08T10:43:43 ICT" finished-at="2022-08-08T10:44:30 ICT">
+      <class name="cucumber.tests.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.tests.TestRunner@17579e0f]" name="setUpClass" is-config="true" duration-ms="1111" started-at="2022-08-08T10:43:43 ICT" finished-at="2022-08-08T10:43:44 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:cucumber.tests.TestRunner@17579e0f]" name="setup" is-config="true" duration-ms="25252" started-at="2022-08-08T10:43:44 ICT" finished-at="2022-08-08T10:44:10 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[127.0.0.1:21503]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.tests.TestRunner@17579e0f]" name="scenario" duration-ms="15735" started-at="2022-08-08T10:44:10 ICT" description="Run Cucumber Features." data-provider="scenarios" finished-at="2022-08-08T10:44:25 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can set alarm to 05.30AM"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Alarm]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:cucumber.tests.TestRunner@17579e0f]" name="teardown" is-config="true" duration-ms="2001" started-at="2022-08-08T10:44:25 ICT" finished-at="2022-08-08T10:44:27 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.tests.TestRunner@17579e0f]" name="tearDownClass" is-config="true" duration-ms="2241" started-at="2022-08-08T10:44:27 ICT" finished-at="2022-08-08T10:44:30 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.tests.TestRunner -->
+    </test> <!-- 127.0.0.1:21503 -->
+    <test name="RR8R20CTGBP" duration-ms="46981" started-at="2022-08-08T10:43:43 ICT" finished-at="2022-08-08T10:44:30 ICT">
+      <class name="cucumber.tests.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.tests.TestRunner@7a187f14]" name="setUpClass" is-config="true" duration-ms="1109" started-at="2022-08-08T10:43:43 ICT" finished-at="2022-08-08T10:43:44 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:cucumber.tests.TestRunner@7a187f14]" name="setup" is-config="true" duration-ms="22754" started-at="2022-08-08T10:43:44 ICT" finished-at="2022-08-08T10:44:07 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RR8R20CTGBP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.tests.TestRunner@7a187f14]" name="scenario" duration-ms="19195" started-at="2022-08-08T10:44:07 ICT" description="Run Cucumber Features." data-provider="scenarios" finished-at="2022-08-08T10:44:26 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can set alarm to 05.30AM"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Alarm]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:cucumber.tests.TestRunner@7a187f14]" name="teardown" is-config="true" duration-ms="2002" started-at="2022-08-08T10:44:26 ICT" finished-at="2022-08-08T10:44:28 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.tests.TestRunner@7a187f14]" name="tearDownClass" is-config="true" duration-ms="1850" started-at="2022-08-08T10:44:28 ICT" finished-at="2022-08-08T10:44:30 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.tests.TestRunner -->
+    </test> <!-- RR8R20CTGBP -->
+  </suite> <!-- Clock-Test-Suite -->
+</testng-results>

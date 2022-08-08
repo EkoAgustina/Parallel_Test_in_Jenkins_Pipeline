@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Clock-Test-Suite" parallel="tests" thread-count="2">
+
+    <test name="127.0.0.1:21503">
+        <parameter name="udid" value="127.0.0.1:21503"/>
+        <parameter name="platformVersion" value="11"/>
+        <classes>
+            <class name="cucumber.tests.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="RR8R20CTGBP">
+        <parameter name="udid" value="RR8R20CTGBP"/>
+        <parameter name="platformVersion" value="11"/>
+        <classes>
+            <class name="cucumber.tests.TestRunner"/>
+        </classes>
+    </test>
+</suite>
