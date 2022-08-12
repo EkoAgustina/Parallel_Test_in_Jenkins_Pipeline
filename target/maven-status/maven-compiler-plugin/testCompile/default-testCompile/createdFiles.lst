@@ -1,8 +1,9 @@
 cucumber\steps\BaseSteps.class
-screens\setAlarm.class
+fAlarm\setAlarm.class
 cucumber\tests\BaseTest.class
+fAlarm\deleteAlarm.class
 cucumber\steps\JobsDetailsSteps.class
 utilities\DesiredCapabilitiesUtil.class
+fAlarm\BaseScreen.class
 utilities\ThreadLocalDriver.class
 cucumber\tests\TestRunner.class
-screens\BaseScreen.class

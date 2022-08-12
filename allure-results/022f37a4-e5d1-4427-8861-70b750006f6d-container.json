@@ -1,0 +1,1 @@
+{"uuid":"022f37a4-e5d1-4427-8861-70b750006f6d","name":"cucumber.tests.BaseTest.setup","children":["a44defc5-2e8d-4819-8fec-c1c778885ea9"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1660318630712,"stop":1660318651480}],"afters":[],"start":1660318630712,"stop":1660318651480}

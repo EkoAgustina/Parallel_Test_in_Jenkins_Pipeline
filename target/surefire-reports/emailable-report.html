@@ -9,78 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Clock-Test-Suite</th></tr>
-<tr><td><a href="#t0">127.0.0.1:21503</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">47,024</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">RR8R20CTGBP</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,287</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">96,311</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">127.0.0.1:21503</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">73,642</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">RR8R20CTGBP</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">78,145</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">151,787</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Clock-Test-Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">127.0.0.1:21503 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">cucumber.tests.TestRunner</td><td><a href="#m0">scenario</a></td><td rowspan="1">1660278310225</td><td rowspan="1">13822</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">RR8R20CTGBP &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumber.tests.TestRunner</td><td><a href="#m1">scenario</a></td><td rowspan="1">1660278312247</td><td rowspan="1">15355</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Clock-Test-Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">127.0.0.1:21503 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">cucumber.tests.TestRunner</td><td><a href="#m0">scenario</a></td><td rowspan="2">1660323882027</td><td rowspan="2">17845</td></tr><tr class="passedeven"><td><a href="#m1">scenario</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">RR8R20CTGBP &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">cucumber.tests.TestRunner</td><td><a href="#m2">scenario</a></td><td rowspan="2">1660323883196</td><td rowspan="2">22818</td></tr><tr class="passedeven"><td><a href="#m3">scenario</a></td></tr></tbody>
 </table>
-<h2>127.0.0.1:21503</h2><h3 id="m0">cucumber.tests.TestRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can set alarm to 05.30AM&quot;</td><td>&quot;Optional[Alarm]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>RR8R20CTGBP</h2><h3 id="m1">cucumber.tests.TestRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can set alarm to 05.30AM&quot;</td><td>&quot;Optional[Alarm]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@content-desc=&quot;5 o&apos;clock&quot;] (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at screens.BaseScreen.waitAndClick(BaseScreen.java:21)
-	at screens.setAlarm.SelectFive(setAlarm.java:47)
-	at cucumber.steps.JobsDetailsSteps.User_choose_5_when_select_time(JobsDetailsSteps.java:38)
-	at ✽.User choose 5 when select time(file:///C:/IdeaProjects/Parallel_Mobile_Integrate_Pipeline_Jenkins/src/test/java/cucumber/features/Clock.feature:6)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-T3FFUFN&apos;, ip: &apos;192.168.197.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.android.deskclock.DeskC..., appPackage: com.google.android.deskclock, databaseEnabled: false, desired: {appActivity: com.android.deskclock.DeskC..., appPackage: com.google.android.deskclock, noReset: false, platformName: android, platformVersion: 11, skipUnlock: true, udid: RR8R20CTGBP}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-A217F, deviceName: RR8R20CTGBP, deviceScreenDensity: 280, deviceScreenSize: 720x1600, deviceUDID: RR8R20CTGBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 12, skipUnlock: true, statBarHeight: 68, takesScreenshot: true, udid: RR8R20CTGBP, viewportRect: {height: 1380, left: 0, top: 68, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: cedc0bfa-2cee-4907-863a-3512070c56bf
-*** Element info: {Using=xpath, value=//android.widget.TextView[@content-desc=&quot;5 o&apos;clock&quot;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at screens.BaseScreen.waitAndClick(BaseScreen.java:21)
-	at screens.setAlarm.SelectFive(setAlarm.java:47)
-	at cucumber.steps.JobsDetailsSteps.User_choose_5_when_select_time(JobsDetailsSteps.java:38)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at cucumber.tests.TestRunner.scenario(TestRunner.java:31)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>127.0.0.1:21503</h2><h3 id="m0">cucumber.tests.TestRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can delete the Alarm that has been created&quot;</td><td>&quot;Optional[Set Alarm]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cucumber.tests.TestRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can set alarm to 05.30AM&quot;</td><td>&quot;Optional[Set Alarm]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RR8R20CTGBP</h2><h3 id="m2">cucumber.tests.TestRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can delete the Alarm that has been created&quot;</td><td>&quot;Optional[Set Alarm]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">cucumber.tests.TestRunner#scenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can set alarm to 05.30AM&quot;</td><td>&quot;Optional[Set Alarm]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

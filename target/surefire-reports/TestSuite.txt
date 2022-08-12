@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.758 s <<< FAILURE! - in TestSuite
-scenario(cucumber.tests.TestRunner)  Time elapsed: 15.446 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@content-desc="5 o'clock"] (tried for 5 second(s) with 500 milliseconds interval)
-	at cucumber.tests.TestRunner.scenario(TestRunner.java:31)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 81.839 s - in TestSuite

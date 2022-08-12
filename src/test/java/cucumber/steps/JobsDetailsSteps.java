@@ -4,8 +4,6 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
-import screens.setAlarm;
 import utilities.ThreadLocalDriver;
 
 public class JobsDetailsSteps extends BaseSteps {
@@ -22,15 +20,6 @@ public class JobsDetailsSteps extends BaseSteps {
     @And("Click button add alarm")
     public void Click_button_add_alarm(){
         setAlarm.SelectTime();
-
-//        try {
-//            setAlarm.FindButtonOK();
-//            System.out.println("Nice");
-//        }catch (NoSuchElementException e){
-//            System.out.println("Duh");
-//            throw e;
-//        }
-
     }
 
     @And("User choose 5 when select time")
@@ -61,7 +50,19 @@ public class JobsDetailsSteps extends BaseSteps {
 
 
     @Then("The system displays an active button switch")
-    public void theSystemDisplaysAnActiveButtonSwitch() {
+    public void theSystemDisplaysAnActiveButtonSwitch() throws InterruptedException {
         setAlarm.Verify();
     }
+
+    @And("User clicks the Delete button")
+    public void userClicksTheDeleteButton() {
+        deleteAlarm.AlarmEmpty();
+
+    }
+
+    @Then("System does not display any alarm")
+    public void systemDoesNotDisplayAnyAlarm() throws InterruptedException {
+        deleteAlarm.VerifyNoAlarm();
+    }
+
 }
