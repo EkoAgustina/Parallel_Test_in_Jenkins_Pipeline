@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
     features = "src/test/java/cucumber/features",
     glue = "cucumber.steps",
-    plugin = {"pretty"},
+    plugin = {"pretty","json:target/cucumber.json"},
     monochrome = true,
     publish = true
 )
