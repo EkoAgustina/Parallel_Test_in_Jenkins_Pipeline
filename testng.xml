@@ -3,15 +3,15 @@
 
 <suite name="Clock-Test-Suite" parallel="tests" thread-count="2">
 
-    <test name="127.0.0.1:21503">
+    <test name="Emulator">
         <parameter name="udid" value="127.0.0.1:21503"/>
-        <parameter name="platformVersion" value="11"/>
+        <parameter name="platformVersion" value="7.1.2"/>
         <classes>
             <class name="cucumber.tests.TestRunner"/>
         </classes>
     </test>
 
-    <test name="RR8R20CTGBP">
+    <test name="MyDevice">
         <parameter name="udid" value="RR8R20CTGBP"/>
         <parameter name="platformVersion" value="11"/>
         <classes>

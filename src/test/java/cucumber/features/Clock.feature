@@ -1,4 +1,4 @@
-Feature: Set Alarm
+Feature: Alarm
 
   Scenario: User can set alarm to 05.30AM
     Given User click the alarm icon on the navbar
