@@ -13,7 +13,7 @@ stages {
             steps {
                 echo "Testing.."
                 sh "appium --port ${APPIUM_PORT}"
-                ...
+
             }
         }
         stage('Deploy') {
@@ -23,18 +23,18 @@ stages {
         }
         post {
             always{
-                ...
+
                 echo "Stop appium server"
                 sh "kill \$(lsof -t -i :${APPIUM_PORT})"
             }
             success{
-                ...
+
             }
             failure{
-                ...
+
             }
             cleanup{
-                ...
+
             }
        }
     }
