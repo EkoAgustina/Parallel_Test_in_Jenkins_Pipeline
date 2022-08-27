@@ -25,7 +25,10 @@ pipeline {
                              steps{
                                  git 'https://github.com/EkoAgustina/Parallel_Test_in_Jenkins_Pipeline.git'
                              script{
-                                 bat(/mvn clean test/)
+                                 bat """
+                                    mvn clean test
+                                    kill \$(lsof -t -i :${APPIUM_PORT})
+                                 """
                               }
                                  }
                          }
