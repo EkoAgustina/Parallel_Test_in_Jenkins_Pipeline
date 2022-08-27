@@ -14,15 +14,10 @@ pipeline {
                    }
             }
 
-         stage('Appium Server') {
-                    steps {
-                        sh "appium --port ${APPIUM_PORT}"
-                    }
-                }
-
         stage("Execute Test"){
             steps{
                 git 'https://github.com/EkoAgustina/Parallel_Test_in_Jenkins_Pipeline.git'
+                sh "appium --port ${APPIUM_PORT}"
             script{
                 bat(/mvn clean test/)
              }
