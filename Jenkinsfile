@@ -32,13 +32,19 @@ pipeline {
             }
         }
 
-         post {
-                    always{
+          post {
+                     always{
 
-                        echo "Stop appium server"
-                        sh "kill \$(lsof -t -i :${APPIUM_PORT})"
-                    }
-               }
+                         echo "Stop appium server"
+                         bat "kill \$(lsof -t -i :${APPIUM_PORT})"
+                     }
+                     success{
+                     }
+                     failure{
+                     }
+                     cleanup{
+                     }
+                }
 
           stage ('Generate Cucumber Report') {
 
