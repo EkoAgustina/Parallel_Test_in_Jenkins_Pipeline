@@ -2,18 +2,9 @@ def project = "Parallel Test"
 
 pipeline {
     agent any
-    tools {
-            maven 'apache-maven-3.8.4'
-            jdk 'jdk1.8.0_341'
-        }
-
-    options{
-        timestamps()
-    }
-
     environment {
-            APPIUM_ADDRESS= 127.0.0.1
-        }
+                APPIUM_ADDRESS= 127.0.0.1
+            }
 
     stages{
 
