@@ -3,8 +3,8 @@ def project = "Parallel Test"
 pipeline {
     agent any
     environment {
-                APPIUM_ADDRESS= 127.0.0.1
-            }
+            APPIUM_PORT= 5555
+        }
 
     stages{
 
