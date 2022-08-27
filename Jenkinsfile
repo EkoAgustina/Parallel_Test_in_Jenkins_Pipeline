@@ -16,9 +16,7 @@ pipeline {
 
          stage('Appium Server') {
                     steps {
-                        echo "Testing.."
                         sh "appium --port ${APPIUM_PORT}"
-                        ...
                     }
                 }
 
