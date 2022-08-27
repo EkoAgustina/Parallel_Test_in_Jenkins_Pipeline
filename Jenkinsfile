@@ -3,7 +3,7 @@ def project = "Parallel Test"
 pipeline {
     agent any
     tools {
-            maven 'Maven 3.8.4'
+            maven 'apache-maven-3.8.4'
             jdk 'jdk1.8.0_341'
         }
 
