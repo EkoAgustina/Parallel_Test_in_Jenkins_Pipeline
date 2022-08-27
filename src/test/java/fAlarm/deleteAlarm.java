@@ -31,7 +31,8 @@ public class deleteAlarm extends BaseScreen {
         return null;
     }
 
-    public void AlarmEmpty(){
+    public void AlarmEmpty() throws InterruptedException {
+        Thread.sleep(10);
 
         try {
             if (waitAndFindElement(alarm1).isDisplayed()==true){
@@ -55,7 +56,7 @@ public class deleteAlarm extends BaseScreen {
 
     }
     public void VerifyNoAlarm() throws InterruptedException {
-        Thread.sleep(5);
+        Thread.sleep(10);
         String MyExpect = "No Alarms";
         String MyActual = getText(noAlarm);
 

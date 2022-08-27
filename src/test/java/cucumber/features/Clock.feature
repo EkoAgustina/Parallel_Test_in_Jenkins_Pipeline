@@ -1,6 +1,6 @@
 Feature: Alarm
 
-  Scenario: User can set alarm to 05.30AM
+  Scenario: User can create Alarm
     Given User click the alarm icon on the navbar
     And Click button add alarm
     And User choose 5 when select time

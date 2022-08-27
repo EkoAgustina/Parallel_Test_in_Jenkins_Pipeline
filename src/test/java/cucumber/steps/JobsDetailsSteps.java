@@ -55,7 +55,7 @@ public class JobsDetailsSteps extends BaseSteps {
     }
 
     @And("User clicks the Delete button")
-    public void userClicksTheDeleteButton() {
+    public void userClicksTheDeleteButton() throws InterruptedException {
         deleteAlarm.AlarmEmpty();
 
     }

@@ -1,13 +1,25 @@
-def project = "Cucumber and generate Allure Report"
+def project = "Parallel Test"
 
 pipeline {
     agent any
+    tools {
+            maven 'Maven 3.8.4'
+            jdk 'jdk1.8.0_341'
+        }
 
     options{
         timestamps()
     }
 
     stages{
+        stage ('Initialize') {
+                    steps {
+                        sh '''
+                            echo "PATH = ${PATH}"
+                            echo "M2_HOME = ${M2_HOME}"
+                        '''
+                    }
+                }
 
         stage('Build') {
             steps {
