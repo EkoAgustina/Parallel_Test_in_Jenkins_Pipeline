@@ -3,7 +3,7 @@ def project = "Parallel Test"
 pipeline {
     agent any
     environment {
-            APPIUM_PORT= 5555
+            APPIUM_PORT= 4723
         }
 
     stages{
@@ -13,10 +13,16 @@ pipeline {
                  echo 'Hi, Start testing'
                    }
             }
+
+         stage('Appium Server') {
+                    steps {
+                        echo "Testing.."
+                        sh "appium --port ${APPIUM_PORT}"
+                        ...
+                    }
+                }
+
         stage("Execute Test"){
-            steps {
-                            sh "appium --address ${APPIUM_ADDRESS}"
-                        }
             steps{
                 git 'https://github.com/EkoAgustina/Parallel_Test_in_Jenkins_Pipeline.git'
             script{
