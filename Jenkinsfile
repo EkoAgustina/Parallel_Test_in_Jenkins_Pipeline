@@ -27,7 +27,7 @@ pipeline {
                 }
         }
 
-          stage ('Cucumber Reports') {
+          stage ('Generate Cucumber Report') {
 
                      steps {
                          cucumber buildStatus: "UNSTABLE",
