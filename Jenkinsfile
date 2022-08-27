@@ -52,12 +52,4 @@ pipeline {
                      }
           }
     }
-     post {
-                always{
-                    echo "Stop appium server"
-                    bat "kill \$(lsof -t -i :${APPIUM_PORT})"
-                }
-             }
-
-
 }
