@@ -21,21 +21,6 @@ stages {
                 echo "Deploying...."
             }
         }
-        post {
-            always{
 
-                echo "Stop appium server"
-                sh "kill \$(lsof -t -i :${APPIUM_PORT})"
-            }
-            success{
-
-            }
-            failure{
-
-            }
-            cleanup{
-
-            }
-       }
     }
 }
