@@ -11,6 +11,10 @@ pipeline {
         timestamps()
     }
 
+    environment {
+            APPIUM_ADDRESS= 127.0.0.1
+        }
+
     stages{
 
         stage('Build') {
@@ -19,6 +23,9 @@ pipeline {
                    }
             }
         stage("Execute Test"){
+            steps {
+                            sh "appium --address ${APPIUM_ADDRESS}"
+                        }
             steps{
                 git 'https://github.com/EkoAgustina/Parallel_Test_in_Jenkins_Pipeline.git'
             script{
