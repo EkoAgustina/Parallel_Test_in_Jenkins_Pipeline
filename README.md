@@ -1,4 +1,4 @@
-# Run Parallel Test then generate Allure Report and Cucumber Report on Jenkins Pipeline
+# Running Mobile Parallel Testing then generate Allure Report and Cucumber Report on Jenkins Pipeline
 
 ![](https://i.imgur.com/wHE965C.png)
 
