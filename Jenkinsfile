@@ -1,4 +1,4 @@
-def project = "Parallel Test"
+def project = "Parallel Mobile Testing"
 
 pipeline {
     agent any
@@ -14,14 +14,14 @@ pipeline {
                    }
             }
 
-        stage('Start appium server and Execute Test'){
+        stage('Start Appium Server and Execute Test'){
             parallel{
-                 stage('Start appium server') {
+                 stage('Appium Server') {
                                     steps {
                                         bat "appium --port ${APPIUM_PORT}"
                                     }
                                 }
-                  stage("Execute Test"){
+                  stage("Test"){
                              steps{
                                  git 'https://github.com/EkoAgustina/Parallel_Test_in_Jenkins_Pipeline.git'
                              script{
@@ -29,9 +29,9 @@ pipeline {
                                     mvn clean test
                                     kill \$(lsof -t -i :${APPIUM_PORT})
                                  """
-                              }
                                  }
-                         }
+                             }
+                   }
             }
         }
 
