@@ -1,21 +1,10 @@
 def project = "Parallel Mobile Testing"
 
 pipeline {
-    agent{
-         node{
-         stages{
-                stage('Appium Server') {
-                            steps{
-                                 cmd_exec("appium --port ${APPIUM_PORT}")
-                            }
-                        }
-                }
-            }
-    }
+    agent any
     environment {
             APPIUM_PORT= 8200
         }
-
 
     stages{
 
@@ -24,6 +13,16 @@ pipeline {
                  echo 'Hi, Start testing'
                    }
             }
+
+        stage('Appium Server') {
+            steps{
+                      cmd_exec("appium --port ${APPIUM_PORT}")
+            }
+            def cmd_exec(command) {
+                                    return bat(returnStdout: true, script: "${command}").trim()
+                                   }
+        }
+
 
          stage("Test"){
                steps{
