@@ -48,12 +48,11 @@ pipeline {
                            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
                      }
           }
-
-           post {
-                  always {
-                      echo "Stop appium server"
-                      bat "kill \$(lsof -t -i :${APPIUM_PORT})"
-                  }
-              }
     }
+          post {
+              always {
+                    echo "Stop appium server"
+                    bat "kill \$(lsof -t -i :${APPIUM_PORT})"
+              }
+          }
 }
