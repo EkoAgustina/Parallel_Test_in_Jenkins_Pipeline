@@ -5,6 +5,13 @@ pipeline {
     environment {
             APPIUM_PORT= 8200
         }
+    node{
+        stage('Appium Server') {
+                    steps{
+                         cmd_exec("appium --port ${APPIUM_PORT}")
+                    }
+                }
+    }
 
     stages{
 
@@ -13,18 +20,6 @@ pipeline {
                  echo 'Hi, Start testing'
                    }
             }
-
-        stage('Appium Server') {
-            steps{
-                      cmd_exec("appium --port ${APPIUM_PORT}")
-                      script{
-                      def cmd_exec(command) {
-                                  return bat(returnStdout: true, script: "${command}").trim()
-                              }
-                             }
-            }
-        }
-
 
          stage("Test"){
                steps{
