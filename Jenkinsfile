@@ -5,6 +5,11 @@ pipeline {
     environment {
             APPIUM_PORT= 8200
         }
+    node{
+         stage('Appium Server') {
+                        cmd_exec("appium --port ${APPIUM_PORT}")
+                }
+    }
 
     stages{
 
@@ -14,11 +19,7 @@ pipeline {
                    }
             }
 
-        stage('Appium Server') {
-            node{
-                cmd_exec("appium --port ${APPIUM_PORT}")
-                }
-        }
+
 
          stage("Test"){
                steps{
