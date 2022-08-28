@@ -17,9 +17,11 @@ pipeline {
         stage('Appium Server') {
             steps{
                       cmd_exec("appium --port ${APPIUM_PORT}")
+                      script{
                       def cmd_exec(command) {
                                   return bat(returnStdout: true, script: "${command}").trim()
                               }
+                             }
             }
         }
 
