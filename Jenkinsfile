@@ -15,7 +15,9 @@ pipeline {
             }
 
         stage('Appium Server') {
-                      cmd_exec("appium --port ${APPIUM_PORT}")
+            node{
+                cmd_exec("appium --port ${APPIUM_PORT}")
+                }
         }
 
          stage("Test"){
