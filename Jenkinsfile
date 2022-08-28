@@ -3,11 +3,13 @@ def project = "Parallel Mobile Testing"
 pipeline {
     agent{
          node{
+         stages{
                 stage('Appium Server') {
                             steps{
                                  cmd_exec("appium --port ${APPIUM_PORT}")
                             }
                         }
+                }
             }
     }
     environment {
