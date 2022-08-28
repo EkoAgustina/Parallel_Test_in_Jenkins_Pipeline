@@ -26,7 +26,7 @@ public class BaseTest {
     @Parameters({ "udid", "platformVersion" })
     public void setup(String udid, String platformVersion) throws IOException {
         DesiredCapabilities caps = desiredCapabilitiesUtil.getDesiredCapabilities(udid, platformVersion);
-        ThreadLocalDriver.setTLDriver(new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps));
+        ThreadLocalDriver.setTLDriver(new AndroidDriver<>(new URL("http://127.0.0.1:8210/wd/hub"), caps));
         ThreadLocalDriver.getTLDriver().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 

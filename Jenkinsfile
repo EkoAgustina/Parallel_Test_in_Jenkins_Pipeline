@@ -3,7 +3,7 @@ def project = "Parallel Mobile Testing"
 pipeline {
     agent any
     environment {
-            APPIUM_PORT= 4723
+            APPIUM_PORT= 8210
         }
 
     stages{
